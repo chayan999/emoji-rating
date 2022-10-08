@@ -21,7 +21,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
     top: 20%;
-    background-color: yellowgreen;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -32,6 +31,7 @@ body {
 .far {
     margin: 1px;
     transform: translateX(-0px);
+    transition: transform .2s;
 }
 
 .rating-container {
@@ -43,4 +43,9 @@ body {
 
 .fas {
     color: lightgray;
+    cursor: pointer;
+}
+
+.fas.active {
+    color: gold
 }
