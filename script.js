@@ -8,6 +8,7 @@ stersEl.forEach((ster, index) => {
     })
 });
 
+updateRating(0)
 function updateRating(index) {
     stersEl.forEach((ster, inx) => {
         if (inx < index + 1) {
@@ -21,6 +22,4 @@ function updateRating(index) {
         emoji.style.transform = `translateX(-${index * 50}px)`;
         emoji.style.color = color[index]
     })
-
-
-}
+};
